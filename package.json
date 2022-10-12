@@ -1,0 +1,19 @@
+{
+  "name": "spider-ext",
+  "version": "0.0.2",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "web-ext run -s ./src/ --firefox=firefoxdeveloperedition",
+    "test": "web-ext lint -s src",
+    "build": "web-ext build -s ./src/",
+    "publish": "dotenv -- bash -c 'web-ext sign -s ./src/ --api-key=$JWT_ISSUER --api-secret=$JWT_SECRET --id=$ID'"
+  },
+  "keywords": [],
+  "author": "J Lopes <mail@jlopes.eu> (https://jlopes.eu/)",
+  "license": "WTFPL",
+  "devDependencies": {
+    "dotenv-cli": "^6.0.0",
+    "web-ext": "^7.2.0"
+  }
+}

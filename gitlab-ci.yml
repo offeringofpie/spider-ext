@@ -1,0 +1,23 @@
+image: node:latest
+
+before_script:
+  - npm install --global web-ext
+
+build_artifacts:
+  stage: build
+  only:
+    - master
+  script:
+    - web-ext sign --api-key=$AMO_JWT_ISSUER --api-secret=$AMO_JWT_SECRET --id=$ARTIFACT_ID
+    - mv ./web-ext-artifacts/ultrawide_netflix-*-an+fx.xpi ./ultrawide_netflix-an+fx.xpi
+  artifacts:
+    paths:
+      - ./ultrawide_netflix-an+fx.xpi
+
+submit_amo:
+  stage: build
+  only:
+    - master
+  allow_failure: true
+  script:
+    - web-ext sign --api-key=$AMO_JWT_ISSUER --api-secret=$AMO_JWT_SECRET --id=$AMO_ID

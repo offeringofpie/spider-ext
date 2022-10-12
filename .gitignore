@@ -1,0 +1,6 @@
+node_modules
+web-ext-artifacts
+.env
+yarn-error.log
+src/.web-extension-id
+.DS_Store
