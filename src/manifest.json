@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Spider Read",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simplify reading with spider",
   "homepage_url": "https://github.com/offeringofpie/spider-ext",
   "icons": {

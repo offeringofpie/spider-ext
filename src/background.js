@@ -6,7 +6,7 @@ browser.contextMenus.create({
 
 browser.contextMenus.onClicked.addListener((info, tab) => {
   if (info.menuItemId === "spider_read") {
-    openTab(infor.linkUrl);
+    openTab(info.linkUrl);
   }
 });
 
