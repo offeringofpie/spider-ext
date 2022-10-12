@@ -3,6 +3,10 @@
   "version": "0.0.2",
   "description": "",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/offeringofpie/spider-ext"
+  },
   "scripts": {
     "start": "web-ext run -s ./src/ --firefox=firefoxdeveloperedition",
     "test": "web-ext lint -s src",

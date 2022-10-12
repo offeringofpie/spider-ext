@@ -3,7 +3,7 @@
   "name": "Spider Read",
   "version": "0.0.2",
   "description": "Simplify reading with spider",
-  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/bookmark-it",
+  "homepage_url": "https://github.com/offeringofpie/spider-ext",
   "icons": {
     "48": "icons/web.svg",
     "96": "icons/web.svg"
